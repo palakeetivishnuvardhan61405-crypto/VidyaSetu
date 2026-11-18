@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore textbooks shared by students on VidyaSetu.">
+    <title>Explore Books | VidyaSetu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">V</span>
+            <span>VidyaSetu<small>KNOWLEDGE WITHOUT BARRIERS</small></span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="explore.html" class="active">Explore Books</a>
+            <a href="donate.html">Donate a Book</a>
+            <a href="requests.html">Book Requests</a>
+            <a href="return.html">Return a Book</a>
+        </nav>
+
+        <a href="donate.html" class="nav-button">
+            Share a Book <span>↗</span>
+        </a>
+    </header>
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section class="section">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-tag">THE COMMUNITY LIBRARY</span>
+
+                    <h2>
+                        Find your next <span>book.</span>
+                    </h2>
+
+                    <p>
+                        Explore textbooks shared by fellow students.
+                        Search for the book you need and request it.
+                    </p>
+                </div>
+
+                <span class="section-count" id="bookCount">
+                    0 books
+                </span>
+            </div>
+
+            <!-- Search -->
+            <div class="search-panel">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search by book title, subject or donor..."
+                    aria-label="Search books"
+                >
+
+                <button
+                    type="button"
+                    id="searchButton"
+                    class="primary-button"
+                >
+                    Search
+                </button>
+
+            </div>
+
+            <!-- Semester Filter -->
+            <div class="filter-row">
+
+                <span>Browse books</span>
+
+                <select id="semesterFilter" aria-label="Filter by semester">
+                    <option value="all">All semesters</option>
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+                </select>
+
+            </div>
+
+            <!-- Books Loaded from C Backend -->
+            <div id="bookGrid" class="book-grid">
+                <!-- JavaScript displays books here -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="empty-state" hidden>
+
+                <span>▤</span>
+
+                <h3>No books found</h3>
+
+                <p>
+                    Try another search or be the first to donate a book.
+                </p>
+
+                <a href="donate.html" class="secondary-button">
+                    Donate a Book
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a href="index.html" class="brand footer-brand">
+            <span class="brand-icon">V</span>
+            <span>
+                VidyaSetu
+                <small>KNOWLEDGE WITHOUT BARRIERS</small>
+            </span>
+        </a>
+
+        <p>
+            Built on the belief that knowledge should be shared.
+        </p>
+
+        <span class="footer-copy">
+            © 2026 VidyaSetu · Student Project
+        </span>
+
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

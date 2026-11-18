@@ -1,0 +1,150 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Donate your unused textbooks and help another student learn.">
+    <title>Donate a Book | VidyaSetu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">VidyaSetu</a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore Books</a>
+                <a href="donate.html" class="active">Donate a Book</a>
+                <a href="requests.html">Requests</a>
+                <a href="return.html">Return Book</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section donation-section">
+
+            <div class="donation-intro">
+                <span class="section-tag">Share Knowledge</span>
+                <h1>Donate a Book</h1>
+                <p>
+                    Your unused textbook can become another student's
+                    opportunity to learn. Share your books through VidyaSetu.
+                </p>
+
+                <div class="donation-benefit">
+                    <h3>Why donate?</h3>
+                    <p>
+                        Reduce textbook waste, support fellow students,
+                        and make educational resources more accessible.
+                    </p>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <h2 class="form-title">
+                    <span class="form-icon">📚</span>
+                    Book Donation Details
+                </h2>
+
+                <form id="donationForm">
+
+                    <div class="form-group">
+                        <label for="donorName">Your Name</label>
+                        <input
+                            type="text"
+                            id="donorName"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookTitle">Book Title</label>
+                        <input
+                            type="text"
+                            id="bookTitle"
+                            placeholder="Enter the book title"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookSubject">Subject</label>
+                        <input
+                            type="text"
+                            id="bookSubject"
+                            placeholder="Example: Data Structures"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="bookSemester">Semester</label>
+                            <select id="bookSemester" required>
+                                <option value="">Select semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                                <option value="5">Semester 5</option>
+                                <option value="6">Semester 6</option>
+                                <option value="7">Semester 7</option>
+                                <option value="8">Semester 8</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bookCondition">Book Condition</label>
+                            <select id="bookCondition" required>
+                                <option value="">Select condition</option>
+                                <option value="Like New">Like New</option>
+                                <option value="Good">Good</option>
+                                <option value="Used">Used</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donorContact">Contact (Optional)</label>
+                        <input
+                            type="text"
+                            id="donorContact"
+                            placeholder="Enter your contact details"
+                        >
+                    </div>
+
+                    <button type="submit" class="form-submit">
+                        Donate Book
+                    </button>
+
+                    <p class="form-footnote">
+                        Thank you for helping another student.
+                        Your book details will be submitted to the VidyaSetu
+                        C backend.
+                    </p>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 VidyaSetu | Knowledge Without Barriers</p>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```

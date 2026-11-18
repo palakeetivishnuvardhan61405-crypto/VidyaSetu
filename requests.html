@@ -1,0 +1,111 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request textbooks from other students through VidyaSetu.">
+    <title>Book Requests | VidyaSetu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">VidyaSetu</a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore Books</a>
+                <a href="donate.html">Donate a Book</a>
+                <a href="requests.html" class="active">Requests</a>
+                <a href="return.html">Return Book</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="section request-section" id="requests">
+
+            <div class="section-heading">
+                <span class="section-tag">Get the Books You Need</span>
+                <h1>Request a Book</h1>
+                <p>
+                    Select an available textbook and submit your request.
+                    Your request will be added to the pending queue.
+                </p>
+            </div>
+
+            <div class="request-card">
+
+                <h2>Book Request Details</h2>
+
+                <form id="requestForm">
+
+                    <div class="form-group">
+                        <label for="requestStudent">Your Name</label>
+                        <input
+                            type="text"
+                            id="requestStudent"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="requestBook">Select Available Book</label>
+                        <select id="requestBook" required>
+                            <option value="">Loading available books...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="requestSemester">Your Semester</label>
+                        <select id="requestSemester" required>
+                            <option value="">Select your semester</option>
+                            <option value="1">Semester 1</option>
+                            <option value="2">Semester 2</option>
+                            <option value="3">Semester 3</option>
+                            <option value="4">Semester 4</option>
+                            <option value="5">Semester 5</option>
+                            <option value="6">Semester 6</option>
+                            <option value="7">Semester 7</option>
+                            <option value="8">Semester 8</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="form-submit">
+                        Submit Book Request
+                    </button>
+
+                </form>
+
+                <div class="request-info">
+                    <h3>How does the request system work?</h3>
+                    <p>
+                        1. Select an available textbook.<br>
+                        2. Submit your request.<br>
+                        3. Your request enters a First-In, First-Out (FIFO) queue.<br>
+                        4. The oldest pending request is processed first.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 VidyaSetu | Knowledge Without Barriers</p>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```

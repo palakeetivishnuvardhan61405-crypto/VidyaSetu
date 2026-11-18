@@ -1,0 +1,89 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Return borrowed textbooks through VidyaSetu.">
+    <title>Return a Book | VidyaSetu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">VidyaSetu</a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore Books</a>
+                <a href="donate.html">Donate a Book</a>
+                <a href="requests.html">Requests</a>
+                <a href="return.html" class="active">Return Book</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="section request-section return-section">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-tag">Complete the Sharing Cycle</span>
+                    <h2>Return a Book</h2>
+                    <p>
+                        Finished reading a borrowed textbook?
+                        Return it so another student can use it.
+                    </p>
+                </div>
+            </div>
+
+            <div class="request-card">
+
+                <div class="form-group">
+                    <label for="returnBook">Select Book to Return</label>
+
+                    <select id="returnBook" required>
+                        <option value="">Loading unavailable books...</option>
+                    </select>
+                </div>
+
+                <button type="button" id="returnSubmitButton"
+                    class="form-submit primary-button">
+                    Return Book
+                </button>
+
+            </div>
+
+            <div class="request-info">
+                <p>
+                    <strong>How it works:</strong><br>
+                    1. Select a currently unavailable book.<br>
+                    2. Click Return Book.<br>
+                    3. The C backend updates its status to Available.<br>
+                    4. The book becomes visible as available in Explore Books.
+                </p>
+            </div>
+
+            <p class="form-footnote">
+                Note: This prototype does not independently verify
+                the identity of the borrower.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 VidyaSetu | Knowledge Without Barriers</p>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
